@@ -13,6 +13,7 @@ CREATE TABLE "Employee" (
     "id" SERIAL NOT NULL,
     "jobId" INTEGER NOT NULL,
     "salary" INTEGER NOT NULL,
+    "seniority" TEXT NOT NULL,
 
     CONSTRAINT "Employee_pkey" PRIMARY KEY ("id")
 );
