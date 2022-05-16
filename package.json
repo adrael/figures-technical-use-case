@@ -6,9 +6,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:server": "npx tsc --project server/tsconfig.json",
-    "run:server": "nodemon -q server/dist/server/index.js",
-    "server": "concurrently \"npx tsc --project server/tsconfig.json --watch\" \"nodemon -q server/dist/server/index.js\""
+    "build:server": "npx tsc --project server2/tsconfig.json",
+    "run:server": "nodemon -q server2/dist/server/index.js",
+    "server": "concurrently \"npx tsc --project server2/tsconfig.json --watch\" \"nodemon -q server2/dist/server2/index.js\""
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
